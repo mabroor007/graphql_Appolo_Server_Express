@@ -1,0 +1,23 @@
+{
+  "name": "graphql_appolo_server_express",
+  "version": "1.0.0",
+  "description": "Test project for graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabroor007/graphql_Appolo_Server_Express.git"
+  },
+  "author": "Mabroor Ahmad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mabroor007/graphql_Appolo_Server_Express/issues"
+  },
+  "homepage": "https://github.com/mabroor007/graphql_Appolo_Server_Express#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.18.0",
+    "express": "^4.17.1"
+  }
+}
