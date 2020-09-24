@@ -10,7 +10,8 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  tracing:true
+  tracing: true,
+  context: ({ req, res }) => ({ req, res }),
 });
 
 // Applying Graphql middleware
