@@ -14,5 +14,7 @@ exports.typeDefs = gql`
     removeBook(name: String!): String!
     updateBook(name: String!, pages: Int!): [Book]!
     login(userName: String!, password: String!): String!
+    signUpUser(userName: String!, email: String!, password: String!): String!
+    logOutUser: String!
   }
 `;
