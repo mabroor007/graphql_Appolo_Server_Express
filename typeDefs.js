@@ -13,5 +13,6 @@ exports.typeDefs = gql`
     addBook(name: String!, pages: Int!): Book!
     removeBook(name: String!): String!
     updateBook(name: String!, pages: Int!): [Book]!
+    login(userName: String!, password: String!): String!
   }
 `;

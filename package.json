@@ -18,6 +18,8 @@
   "homepage": "https://github.com/mabroor007/graphql_Appolo_Server_Express#readme",
   "dependencies": {
     "apollo-server-express": "^2.18.0",
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
   }
 }

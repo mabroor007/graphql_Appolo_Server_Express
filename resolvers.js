@@ -1,4 +1,5 @@
 const store = require("./store");
+const auth = require("./auth");
 
 exports.resolvers = {
   Query: {
@@ -8,8 +9,11 @@ exports.resolvers = {
     },
   },
   Mutation: {
-    addBook: (_, { name, pages }) => store.addBook(name, pages),
+    addBook: (_, { name, pages }, { userData }) => {
+      return store.addBook(name, pages, userData);
+    },
     removeBook: (_, { name }) => store.removeBook(name),
     updateBook: (_, { name, pages }) => store.updateBook(name, { name, pages }),
+    login: (_, user, { res }) => auth.loginUser(user, res),
   },
 };
